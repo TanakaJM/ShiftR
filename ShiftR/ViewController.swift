@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let shifter = Shifter()
         
         shifter.attach { (red, green, blue) in
-            self.rgbSubject.backgroundColor = UIColor(red: CGFloat(red)/CGFloat(100), green: CGFloat(green)/CGFloat(100), blue: CGFloat(blue)/CGFloat(100), alpha: 1)
+            self.rgbSubject.backgroundColor = UIColor(red: CGFloat(red)/CGFloat(255), green: CGFloat(green)/CGFloat(255), blue: CGFloat(blue)/CGFloat(255), alpha: 1)
         }
     }
 }

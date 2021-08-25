@@ -14,7 +14,8 @@ class Shifter {
     var blue: Int = 0
     
     func attach(_ onShift: @escaping (_ red: Int,_ green: Int,_ blue: Int) -> ()) {
-        Timer.scheduledTimer(withTimeInterval: 0.016, repeats: true) { [self] timer in
+        // 0.008 is about 120 updates a second
+        Timer.scheduledTimer(withTimeInterval: 0.008, repeats: true) { [self] timer in
             updateColours()
             onShift(red, green, blue)
         }
